@@ -1,5 +1,5 @@
 pipeline{
- agent any{
+ agent any
 
  stage('hello'){
  steps{
@@ -11,9 +11,6 @@ pipeline{
  steps{
  echo"hi"
  dir 'pwd'
- }
- }
-
  }
 
 }
