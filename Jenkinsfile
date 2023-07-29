@@ -10,13 +10,10 @@ pipeline{
  stage('hi'){
  steps{
  echo"hi"
- bat 'pwd'
+ dir 'pwd'
  }
  }
 
  }
-
-
-
 
 }
