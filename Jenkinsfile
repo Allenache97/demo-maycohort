@@ -1,16 +1,20 @@
-pipeline{
+pipeline {
  agent any
 
- stage('hello'){
- steps{
- echo"hello"
- }
+ stages{
+  stage('hello'){
+    step{
+     echo "hello"
+    }
 
- }
+  }
+
  stage('hi'){
- steps{
- echo"hi"
- bat 'pwd'
+   step{
+   echo 'hi'
+   bat 'dir'
+   }
+ }
  }
 
 }
