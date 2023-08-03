@@ -11,7 +11,7 @@ pipeline {
 
  stage('hi'){
    step{
-   echo 'hi'
+   echo "hi"
    bat 'dir'
    }
  }
