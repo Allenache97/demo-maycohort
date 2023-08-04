@@ -1,20 +1,17 @@
 pipeline {
- agent any
+  agent any
 
- stages{
+  stages{
   stage('hello'){
     steps{
-     echo 'hello'
+     echo "hello"
     }
-
   }
-
- stage('hi'){
+  stage('hi'){
    steps{
    echo 'hi'
-   bat 'dir'
+   bat 'pwd'
    }
- }
- }
-
+  }
+  }
 }
