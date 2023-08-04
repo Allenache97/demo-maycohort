@@ -4,14 +4,14 @@ pipeline {
  stages{
   stage('hello'){
     steps{
-     echo "hello"
+     echo 'hello'
     }
 
   }
 
  stage('hi'){
    steps{
-   echo "hi"
+   echo 'hi'
    bat 'dir'
    }
  }
